@@ -2,6 +2,11 @@
 import time
 from datetime import datetime, timedelta
 import pytz
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
 from slackbot_db import process_pending_messages_with_window, get_pending_count
 
 # India timezone

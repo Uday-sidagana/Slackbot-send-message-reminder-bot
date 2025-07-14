@@ -6,6 +6,10 @@ Run this every minute with cron: * * * * * /path/to/python process_messages.py
 
 import sys
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add current directory to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
